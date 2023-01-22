@@ -1,0 +1,40 @@
+{
+  "name": "textlint-rule-imas-idol",
+  "version": "1.0.0",
+  "description": "textlintでTHE IDOLM@STERの登場人物の誤表記を検出するためのルール",
+  "author": "mirai-iro",
+  "license": "MIT",
+  "keywords": [
+    "textlintrule",
+    "idolmaster"
+  ],
+  "main": "lib/index.js",
+  "files": [
+    "lib/",
+    "src/"
+  ],
+  "dependencies": {
+    "textlint-rule-prh": "^5.3.0"
+  },
+  "devDependencies": {
+    "textlint-scripts": "^12.5.0",
+    "textlint-tester": "^12.5.0"
+  },
+  "scripts": {
+    "test": "textlint-scripts test",
+    "build": "textlint-scripts build",
+    "prepublish": "npm run --if-present build"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maruamyu/textlint-rule-imas-idol.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maruamyu/textlint-rule-imas-idol/issues"
+  },
+  "homepage": "https://github.com/maruamyu/textlint-rule-imas-idol#readme"
+}

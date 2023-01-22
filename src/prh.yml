@@ -1,0 +1,69 @@
+rules:
+  - expected: '菊地真'
+    pattern: '菊池真'
+  - expected: '秋月律子'
+    pattern: '秋月津子'
+  - expected: '萩原雪歩'
+    pattern: '荻原雪歩'
+  - expected: '高木順一朗'
+    pattern: '高木順一郎'
+  - expected: '高木順二朗'
+    pattern: '高木順ニ朗'
+  - expected: '高木順二朗'
+    pattern: '高木順二郎'
+
+  - expected: '水谷絵理'
+    pattern: '水谷絵里'
+
+  - expected: '水木聖來'
+    pattern: '水木聖来'
+  - expected: '高峯のあ'
+    pattern: '高峰のあ'
+  - expected: '伊集院惠'
+    patterns:
+      - '伊集院惠美'
+      - '伊集院恵美'
+      - '伊集院恵'
+
+  - expected: '持田亜里沙'
+    pattern: '持田亜利沙'
+  - expected: '松田亜利沙'
+    pattern: '松田亜里沙'
+
+  - expected: '川島瑞樹'
+    pattern: '川島瑞希'
+  - expected: '真壁瑞希'
+    pattern: '真壁瑞樹'
+
+  - expected: '神谷奈緒'
+    pattern: '神谷直央'
+  - expected: '横山奈緒'
+    pattern: '横山直央'
+  - expected: '岡村直央'
+    pattern: '岡村奈緒'
+
+  - expected: '北条加蓮'
+    pattern: '北条可憐'
+  - expected: '篠宮可憐'
+    pattern: '篠宮加蓮'
+
+  - expected: '所恵美'
+    pattern: '所惠美'
+  - expected: '高坂海美'
+    pattern: '高坂海未'
+
+  - expected: '詩花'
+    pattern: '詩歌'
+  - expected: '奥空心白'
+    pattern: '奥空琥珀'
+  # TODO 松浦亜弥さん以外の著名な"亜弥"さんの確認
+  - expected: '亜夜'
+    pattern: /(?<!松浦)亜弥/
+    specs:
+      - from: '亜弥'
+        to: '亜夜'
+      - from: '松浦亜弥'
+        to: '松浦亜弥'
+
+  - expected: '棟方愛海'
+    pattern: '務中辰巳'
